@@ -18,7 +18,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
   ...restProps
 }: ProjectCardProps) => {
   const ProjectCardClasses = CN(
-    `project-card bg-white px-[24px] py-[24px] md:px-[40px] md:py-[40px] shadow-card-shadow flex flex-col-reverse md:flex-row justify-between gap-[24px] md:gap-[80px] items-center rounded-[12px]`,
+    `project-card bg-white px-[24px] py-[24px] md:px-[40px] md:py-[40px] shadow-card-shadow flex flex-col-reverse lg:flex-row justify-between gap-[24px] lg:gap-[80px] items-center rounded-[12px]`,
 
     className
   )

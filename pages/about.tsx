@@ -21,7 +21,7 @@ export default function About() {
       <div className=''>
         <Header />
 
-        <div className='container py-[32px] md:pt-[80px] md:pb-[100px] flex flex-col items-center gap-[16px] md:gap-[40px]'>
+        <div className='container py-[32px] lg:pt-[80px] md:pb-[40px] lg:pb-[100px] flex flex-col items-center gap-[16px] lg:gap-[40px]'>
           <img
             src='https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
             alt='project image'
@@ -56,7 +56,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className='pt-[16px] md:pt-[56px]'>
+          <div className='pt-[16px] lg:pt-[56px]'>
             <Link href='/contact'>
               <Button appearance='primary' label='Contact' />
             </Link>

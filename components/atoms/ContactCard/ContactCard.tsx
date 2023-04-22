@@ -31,9 +31,9 @@ export const ContactCard: FC<ContactCardProps> = ({
         </div>
       </div>
       <div className='flex flex-col items-center gap-[8px]'>
-        <h3 className='text-h4 text-N-800 font-500'>{heading}</h3>
+        <h3 className='text-h4 text-N-800 font-500 text-center'>{heading}</h3>
         <a href={link}>
-          <p className='text-base text-center text-N-700 w-[300px] hover:text-B-500'>
+          <p className='text-base text-center text-N-700 lg:w-[300px] hover:text-B-500'>
             {description}
           </p>
         </a>

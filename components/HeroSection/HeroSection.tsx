@@ -18,13 +18,13 @@ export const HeroSection: FC<HeroSectionProps> = ({
   return (
     <div className={HeroSectionClasses} {...restProps}>
       <div className='flex flex-col gap-[12px]'>
-        <h1 className='text-h1 md:text-display-xl font-700 font-heading md:max-w-[540px] text-center md:text-left'>
-          Hey! I am {''}
+        <h1 className='text-h1 md:text-display-xl font-700 font-heading md:max-w-[540px] text-center md:text-left !leading-none'>
+          Hey! I am {''} <br className='lg:hidden' />
           <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-[#E63F3F]'>
             Freya Abbey.
           </span>
         </h1>
-        <p className='text-h6 text-N-600 md:max-w-[540px] text-center md:text-left'>
+        <p className='text-h6 text-N-600 md:max-w-[540px] text-center md:text-left lg:pt-[20px]'>
           A passionate full stack Front-End developer creating visually stunning and highly
           functional user interfaces. My goal is to leverage my skills and experience to help
           businesses enhance their online presence and achieve their digital goals.

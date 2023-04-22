@@ -20,14 +20,16 @@ export default function Contact() {
       <div className=''>
         <Header />
 
-        <div className='container py-[24px] md:py-[60px]'>
-          <h1 className='text-h2 md:text-display-md font-700 font-heading text-center md:text-left'>Let&#39;s chat</h1>
-          <p className='text-base text-N-600 lg:w-[50%]'>
+        <div className='container py-[24px] md:pb-[40px] lg:py-[60px]'>
+          <h1 className='text-h2 md:text-display-md font-700 font-heading text-center'>
+            Let&#39;s chat
+          </h1>
+          <p className='text-base text-N-600 lg:w-[600px] text-center mx-auto'>
             Let us work together to turn your online goals into a reality! Do not hesitate to reach
             out and get in touch with me today! Whether you have a specific project in mind or just
             want to discuss your web development needs, I am here to help.
           </p>
-          <div className='flex flex-col gap-[24px] md:gap-[32px] md:flex-row py-[32px] md:py-[60px] md:justify-between'>
+          <div className='flex flex-col gap-[24px] md:gap-[32px] md:flex-row md:justify-between pt-[24px] md:pt-[60px]'>
             {/* Contact details */}
             <ContactCard
               icon={<i className='ri-whatsapp-line' />}

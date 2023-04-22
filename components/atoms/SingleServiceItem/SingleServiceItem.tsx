@@ -17,7 +17,7 @@ export const SingleServiceItem: FC<SingleServiceItemProps> = ({
   ...restProps
 }: SingleServiceItemProps) => {
   const SingleServiceItemClasses = CN(
-    `single-service-item w-full flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px]`,
+    `single-service-item w-full flex flex-col items-center gap-[24px] px-[20px] py-[20px] lg:py-[40px] lg:px-[40px] bg-white rounded-[12px]`,
     className
   )
 
@@ -33,8 +33,8 @@ export const SingleServiceItem: FC<SingleServiceItemProps> = ({
         />
       </div>
       <div className='flex flex-col items-center gap-[8px]'>
-        <h3 className='text-h4 text-N-800 font-500'>{heading}</h3>
-        <p className='text-base text-center text-N-700 w-[300px]'>{description}</p>
+        <h3 className='text-h4 text-N-800 font-500 text-center'>{heading}</h3>
+        <p className='text-base text-center text-N-700 lg:w-[300px]'>{description}</p>
       </div>
     </div>
   )

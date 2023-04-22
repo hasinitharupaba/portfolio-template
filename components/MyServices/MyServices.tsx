@@ -7,12 +7,12 @@ export interface MyServicesProps {
 }
 
 export const MyServices: FC<MyServicesProps> = ({ className, ...restProps }: MyServicesProps) => {
-  const MyServicesClasses = CN(`my-services bg-B-10 pt-[12px] pb-[24px] md:py-[60px]`, className)
+  const MyServicesClasses = CN(`my-services bg-B-10 pt-[12px] pb-[24px] lg:py-[60px]`, className)
 
   return (
     <div className={MyServicesClasses} {...restProps}>
-      <div className='container flex flex-col gap-[24px] md:gap-[40px]'>
-        <h2 className='text-h2 md:text-display-md font-700 font-heading text-center md:text-left'>My services</h2>
+      <div className='container flex flex-col gap-[24px] lg:gap-[40px]'>
+        <h2 className='text-h2 md:text-display-md font-700 font-heading text-center'>My services</h2>
         <div className='flex flex-col md:flex-row gap-[16px] md:gap-[32px]'>
           <SingleServiceItem
             icon='/icons/icon-01.svg'

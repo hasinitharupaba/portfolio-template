@@ -9,13 +9,15 @@ export interface MyProjectsProps {
 
 export const MyProjects: FC<MyProjectsProps> = ({ className, ...restProps }: MyProjectsProps) => {
   const MyProjectsClasses = CN(
-    `my-projects container pt-[12px] pb-[24px] md:py-[60px] flex flex-col gap-[24px] md:gap-[40px]`,
+    `my-projects container pt-[12px] pb-[24px] md:pb-[40px] lg:py-[60px] flex flex-col gap-[24px] lg:gap-[40px]`,
     className
   )
 
   return (
     <div className={MyProjectsClasses} {...restProps}>
-      <h2 className='text-h2 md:text-display-md font-700 font-heading text-center md:text-left'>Featured projects</h2>
+      <h2 className='text-h2 md:text-display-md font-700 font-heading text-center'>
+        Featured projects
+      </h2>
       <div className='flex flex-col gap-[24px]'>
         <ProjectCard
           heading='Fashionista'

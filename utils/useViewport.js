@@ -6,7 +6,7 @@ export const useViewport = () => {
   const [height, setHeight] = useState(0)
 
   const isMobile = useMediaQuery('(min-width: 1px) and (max-width: 767px)')
-  const isTablet = useMediaQuery('(min-width: 768px) and (max-width: 1169px)')
+  const isTablet = useMediaQuery('(min-width: 768px) and (max-width: 1263px)')
   const isDesktop = useMediaQuery('(min-width: 1264px)')
 
   useEffect(() => {
