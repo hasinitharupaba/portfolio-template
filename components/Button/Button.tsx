@@ -22,13 +22,13 @@ export const Button: FC<ButtonProps> = ({
   ...restProps
 }: ButtonProps) => {
   const ButtonClasses = CN(
-    'button cursor-pointer w-full',
+    'button cursor-pointer flex items-center gap-[12px] h-[40px]',
     {
-      'border border-B-600 px-[48px] pt-[12px] pb-[10px] rounded-[4px] text-h6 font-heading text-N-600 hover:text-white hover:bg-N-800 text-center':
+      'bg-B-400 text-white py-[12px] px-[24px] rounded-full text-h4 font-700 font-heading hover:text-white hover:bg-N-800 text-center':
         appearance === 'primary',
       'px-[48px] pt-[12px] pb-[10px] rounded-[4px] text-h6 font-heading text-white bg-N-800 text-center':
         appearance === 'active',
-      'text-h6 font-heading text-N-600 font-600 hover:text-N-800': appearance === 'link',
+      'text-h4 font-heading text-N-800 font-600 hover:text-B-500': appearance === 'link',
     },
     className
   )
@@ -37,7 +37,7 @@ export const Button: FC<ButtonProps> = ({
     <div className={ButtonClasses} {...restProps}>
       {leftIcon && <div className='inline-flex'>{leftIcon}</div>}
 
-      <p className='leading-4 font-600 uppercase'>{label}</p>
+      <p className='leading-4 font-500'>{label}</p>
 
       {rightIcon && <div className='inline-flex'>{rightIcon}</div>}
     </div>

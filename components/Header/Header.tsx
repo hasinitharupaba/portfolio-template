@@ -1,9 +1,7 @@
 import React, { FC, useState } from 'react'
 import CN from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from 'components/Button'
-import { useRouter } from 'next/router'
 import useViewport from 'utils/useViewport'
 
 export interface HeaderProps {
@@ -11,12 +9,7 @@ export interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps) => {
-  const HeaderClasses = CN(
-    `header flex flex-col lg:items-center gap-[20px] py-[20px] sticky top-0 bg-white/80 backdrop-blur-sm z-[1000]`,
-    className
-  )
-
-  const router = useRouter()
+  const HeaderClasses = CN(`header flex py-[24px] bg-white/80 backdrop-blur-sm`, className)
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,9 +17,8 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
 
   const data = [
     { name: 'Home', Link: '/' },
-    { name: 'Services', Link: '/services' },
+    { name: 'Projects', Link: '/projects' },
     { name: 'About', Link: '/about' },
-    { name: 'Portfolio', Link: '/portfolio' },
     { name: 'Contact', Link: '/contact' },
   ]
 
@@ -70,28 +62,25 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
 
       {/* header links */}
       {(isDesktop || isTablet) && (
-        <div className='flex flex-col gap-[24px]'>
+        <div className='flex gap-[200px] justify-between items-center container'>
           <Link href='/'>
             <div className='flex justify-center'>
               <img
-                src='/logo-brown.svg'
-                className='object-center w-[200px] h-[56px]'
+                src='/logo-black.svg'
+                className='object-center w-[100px] h-full'
                 alt='Meliora Logo'
               />
             </div>
           </Link>
-          <div className='container border-t border-N-500 border-b flex justify-around w-[840px] py-[12px]'>
+          <div className='flex py-[12px] gap-[32px]'>
             <Link href='/' passHref>
               <Button label='Home' appearance='link' />
             </Link>
-            <Link href='/services' passHref>
-              <Button label='Services' appearance='link' />
+            <Link href='/projects' passHref>
+              <Button label='Projects' appearance='link' />
             </Link>
             <Link href='/about' passHref>
-              <Button label='About us' appearance='link' />
-            </Link>
-            <Link href='/portfolio' passHref>
-              <Button label='Portfolio' appearance='link' />
+              <Button label='About' appearance='link' />
             </Link>
             <Link href='/contact' passHref>
               <Button label='Contact' appearance='link' />

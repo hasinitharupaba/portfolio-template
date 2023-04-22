@@ -8,12 +8,12 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
           <link
-            href='https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@400;500;700&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap'
             rel='stylesheet'
           />
           {/* AOS */}

@@ -6,9 +6,9 @@ module.exports = {
 
   fontStack: [
     {
-      name: 'Cinzel',
+      name: 'Cormorant Garamond',
       cssClass: 'text-serif',
-      link: 'https://fonts.google.com/specimen/Cinzel',
+      link: 'https://fonts.google.com/specimen/Cormorant Garamond',
     },
     {
       name: 'Inter',
@@ -24,15 +24,15 @@ module.exports = {
 
   fontFamily: {
     sans: ['"Inter"', 'sans-serif'],
-    serif: ['"Cinzel"', 'serif'],
-    heading: ['"Cinzel"', 'serif'],
-    display: ['"Cinzel"', 'serif'],
+    serif: ['"Cormorant Garamond"', 'serif'],
+    heading: ['"Cormorant Garamond"', 'serif'],
+    display: ['"Cormorant Garamond"', 'serif'],
     mono: ['"IBM Plex Mono"', 'monospace'],
     code: ['"IBM Plex Mono"', 'monospace'],
   },
 
   headings: {
-    fontFamily: '"Cinzel", serif',
+    fontFamily: '"Cormorant Garamond", serif',
 
     fontSize: {
       'display-xl': [

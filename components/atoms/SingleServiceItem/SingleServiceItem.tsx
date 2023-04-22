@@ -4,35 +4,38 @@ import Image from 'next/image'
 import useViewPort from 'utils/useViewport'
 export interface SingleServiceItemProps {
   [x: string]: any
-  image?: any
+  icon?: any
   heading?: string
   description?: string
 }
 
 export const SingleServiceItem: FC<SingleServiceItemProps> = ({
   className,
-  image,
+  icon,
   heading,
   description,
   ...restProps
 }: SingleServiceItemProps) => {
   const SingleServiceItemClasses = CN(
-    `single-service-item flex flex-col items-center gap-[12px]`,
+    `single-service-item flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px]`,
     className
   )
 
-  const { isMobile } = useViewPort()
-
   return (
     <div className={SingleServiceItemClasses} {...restProps}>
-      <Image
-        src={image}
-        width={(isMobile && 80) || 100}
-        height={(isMobile && 80) || 100}
-        alt='Meliora lifestyle wedding photo'
-      />
-      <h3 className='text-h4 text-N-600 font-heading font-500 uppercase'>{heading}</h3>
-      <p className='text-base text-center text-N-700 w-[300px]'>{description}</p>
+      <div className='bg-B-400 rounded-full py-[16px] px-[16px]'>
+        <Image
+          src={icon || ''}
+          width={40}
+          height={40}
+          alt='service icon'
+          className='object-center object-contain w-[40px] h-[40px]'
+        />
+      </div>
+      <div className='flex flex-col items-center gap-[8px]'>
+        <h3 className='text-h4 text-N-800 font-500'>{heading}</h3>
+        <p className='text-base text-center text-N-700 w-[300px]'>{description}</p>
+      </div>
     </div>
   )
 }
