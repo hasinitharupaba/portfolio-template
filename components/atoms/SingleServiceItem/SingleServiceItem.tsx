@@ -17,7 +17,7 @@ export const SingleServiceItem: FC<SingleServiceItemProps> = ({
   ...restProps
 }: SingleServiceItemProps) => {
   const SingleServiceItemClasses = CN(
-    `single-service-item flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px]`,
+    `single-service-item w-full flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px]`,
     className
   )
 

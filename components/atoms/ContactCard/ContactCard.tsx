@@ -19,7 +19,7 @@ export const ContactCard: FC<ContactCardProps> = ({
   ...restProps
 }: ContactCardProps) => {
   const ContactCardClasses = CN(
-    `contact-card flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px] shadow-card-shadow`,
+    `contact-card flex flex-col items-center gap-[24px] py-[40px] px-[40px] bg-white rounded-[12px] shadow-card-shadow w-full`,
     className
   )
 

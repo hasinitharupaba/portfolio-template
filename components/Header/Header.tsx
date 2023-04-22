@@ -29,9 +29,9 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
         <div className='flex container justify-between items-center'>
           <Link href='/'>
             <img
-              src='/logo-brown.svg'
+              src='/logo-black.svg'
               className='object-center w-[140px] h-[56px]'
-              alt='Meliora Logo'
+              alt='Logo'
             />
           </Link>
 
@@ -68,7 +68,7 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
               <img
                 src='/logo-black.svg'
                 className='object-center w-[100px] h-full'
-                alt='Meliora Logo'
+                alt='Logo'
               />
             </div>
           </Link>

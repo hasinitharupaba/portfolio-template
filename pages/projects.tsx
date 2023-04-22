@@ -52,8 +52,10 @@ export default function Projects() {
       <div className=''>
         <Header />
 
-        <div className='container flex flex-col gap-[24px] py-[60px]'>
-          <h2 className='text-display-md font-700 font-heading'>My projects</h2>
+        <div className='container flex flex-col gap-[24px] py-[32px] md:py-[60px]'>
+          <h2 className='md:text-display-md font-700 font-heading text-center md:text-left text-h2 '>
+            My projects
+          </h2>
 
           <div className='flex flex-col gap-[24px]'>
             {servicesData.map(({ image, heading, description }: any, index: number) => {

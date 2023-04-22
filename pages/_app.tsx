@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Portfolio Photography</title>
-        <meta name='Meliora lifestyle photography' content='initial-scale=1, width=device-width' />
+        <meta name='portfolio' content='initial-scale=1, width=device-width' />
       </Head>
 
       <Component {...pageProps} />

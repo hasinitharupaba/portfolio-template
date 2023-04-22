@@ -18,12 +18,12 @@ export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps
           <Image
             className='object-center'
             src='/logo-black.svg'
-            alt='Meliora Logo'
+            alt='Logo'
             width={100}
             height={56}
           />
           <span className='text-base text-N-800 text-center'>
-            © 2023 John Smith. All Rights Reserved.
+            © 2023 Freya Abby. All Rights Reserved.
           </span>
         </div>
       </div>

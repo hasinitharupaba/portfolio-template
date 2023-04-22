@@ -18,16 +18,17 @@ export const ProjectCard: FC<ProjectCardProps> = ({
   ...restProps
 }: ProjectCardProps) => {
   const ProjectCardClasses = CN(
-    `project-card bg-white px-[40px] py-[40px] shadow-card-shadow flex justify-between gap-[80px] items-center rounded-[12px]`,
+    `project-card bg-white px-[24px] py-[24px] md:px-[40px] md:py-[40px] shadow-card-shadow flex flex-col-reverse md:flex-row justify-between gap-[24px] md:gap-[80px] items-center rounded-[12px]`,
+
     className
   )
 
   return (
     <div className={ProjectCardClasses} {...restProps}>
-      <div className='flex flex-col gap-[12px]'>
+      <div className='flex flex-col gap-[8px] md:gap-[12px]'>
         <h3 className='text-h3 font-600'>{heading}</h3>
         <p className='text-base font-400 text-N-600'>{description}</p>
-        <div className='flex pt-[16px]'>
+        <div className='flex md:pt-[16px]'>
           <Button
             label='Live demo'
             appearance='primary'
@@ -40,7 +41,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
         width={500}
         height={300}
         alt='project image'
-        className='object-center object-cover w-[500px] h-[300px] rounded-[12px]'
+        className='object-center object-cover w-full lg:w-[500px] h-[300px] rounded-[12px]'
       />
     </div>
   )
