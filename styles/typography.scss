@@ -1,0 +1,35 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply break-normal;
+}
+
+.text-display-xl,
+.text-display-lg,
+.text-display-md,
+.text-display-sm {
+  @apply font-display;
+}
+
+.article {
+  p {
+    @apply py-[12px];
+  }
+
+  ol,
+  ul {
+    @apply flex flex-col list-decimal pl-[20px];
+
+    li {
+      @apply text-N-800 list-disc py-[8px];
+    }
+  }
+
+  h1 {
+    @apply text-h4 font-700;
+  }
+
+  h2 {
+    @apply text-h5 font-700;
+  }
+}

@@ -1,0 +1,14 @@
+* {
+  @apply selection:bg-N-800 selection:text-white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-N-10 font-sans text-base text-N-700;
+  font-feature-settings: 'salt' on, 'ss01' on, 'cv01' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
