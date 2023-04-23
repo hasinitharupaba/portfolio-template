@@ -7,7 +7,7 @@ export interface FooterProps {
 }
 
 export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps) => {
-  const FooterClasses = CN(`footer bg-N-100 h-full`, className)
+  const FooterClasses = CN(`footer bg-B-50 h-full`, className)
 
   return (
     <div className={FooterClasses} {...restProps}>
