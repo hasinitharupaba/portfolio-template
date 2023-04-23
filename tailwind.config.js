@@ -7,6 +7,7 @@ const round = num =>
     .toFixed(7)
     .replace(/(\.[0-9]+?)0+$/, '$1')
     .replace(/\.0$/, '')
+
 const em = (px, base) => `${round(px / base)}em`
 
 module.exports = {

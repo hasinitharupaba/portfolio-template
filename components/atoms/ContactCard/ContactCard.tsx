@@ -1,20 +1,19 @@
 import React, { FC } from 'react'
 import CN from 'classnames'
-import Image from 'next/image'
 
 export interface ContactCardProps {
   [x: string]: any
-  icon?: any
-  heading?: string
   description?: string
+  heading?: string
+  icon?: any
   link?: string
 }
 
 export const ContactCard: FC<ContactCardProps> = ({
   className,
-  icon,
-  heading,
   description,
+  heading,
+  icon,
   link,
   ...restProps
 }: ContactCardProps) => {

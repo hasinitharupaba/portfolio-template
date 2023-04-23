@@ -1,7 +1,3 @@
-/*
- * Please don't edit this component unless for style changes
- */
-
 import React, { FC } from 'react'
 import CN from 'classnames'
 import Link from 'next/link'

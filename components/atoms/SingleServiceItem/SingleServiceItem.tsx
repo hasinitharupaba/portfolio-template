@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import CN from 'classnames'
 import Image from 'next/image'
-import useViewPort from 'utils/useViewport'
 export interface SingleServiceItemProps {
   [x: string]: any
   description?: string

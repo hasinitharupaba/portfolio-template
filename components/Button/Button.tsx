@@ -34,16 +34,14 @@ export const Button: FC<ButtonProps> = ({
   )
 
   return (
-    <div className={ButtonClasses} {...restProps}>
+    <button className={ButtonClasses} {...restProps} type='button'>
       {leftIcon && <div className='inline-flex'>{leftIcon}</div>}
 
       <p className='leading-4 font-500'>{label}</p>
 
       {rightIcon && <div className='inline-flex'>{rightIcon}</div>}
-    </div>
+    </button>
   )
 }
-
-Button.defaultProps = {}
 
 export default Button

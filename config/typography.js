@@ -1,6 +1,3 @@
-const colors = require('./colors'),
-  palette = colors.palette
-
 module.exports = {
   fontSources: ['Google Fonts'],
 

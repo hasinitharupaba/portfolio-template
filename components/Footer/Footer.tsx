@@ -8,6 +8,7 @@ export interface FooterProps {
 
 export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps) => {
   const FooterClasses = CN(`footer bg-B-50 h-full`, className)
+  const copyrightDate = new Date().getFullYear()
 
   return (
     <div className={FooterClasses} {...restProps}>
@@ -23,7 +24,7 @@ export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps
             height={56}
           />
           <span className='text-base text-N-800 text-center'>
-            © 2023 Freya Abby. All Rights Reserved.
+            © {copyrightDate} Freya Abby. All Rights Reserved.
           </span>
         </div>
       </div>

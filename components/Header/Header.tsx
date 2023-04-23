@@ -29,34 +29,29 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
       {isMobile && (
         <div className='flex container justify-between items-center'>
           <Link href='/'>
-            <img
-              src='/logo-black.svg'
-              className='object-center w-[140px] h-[56px]'
-              alt='Logo'
-            />
+            <img src='/logo-black.svg' className='object-center w-[140px] h-[56px]' alt='Logo' />
           </Link>
 
           <div
             className='items-center gap-[12px] cursor-pointer z-[1000] flex justify-start py-[8px]'
             onClick={() => setIsOpen(!isOpen)}>
-            <i className={!isOpen ? 'ri-menu-line text-[24px]' : 'ri-close-line text-[24px]'}>
-              <div
-                className={
-                  !isOpen
-                    ? 'hidden'
-                    : 'open-menu-bg flex flex-col bg-white/90 backdrop-blur-lg z-[10000] rounded-b-[4px] absolute gap-[12px] top-[89px] right-0 py-[20px] px-[40px] h-[248px] w-full'
-                }>
-                {data.map(Link => (
-                  <li key={Link.name} className='text-base list-none'>
-                    <a
-                      href={Link.Link}
-                      className='text-N-800 font-600 text-h6 font-heading uppercase hover:text-N-700'>
-                      {Link.name}
-                    </a>
-                  </li>
-                ))}
-              </div>
-            </i>
+            <i className={!isOpen ? 'ri-menu-line text-[24px]' : 'ri-close-line text-[24px]'} />
+            <ul
+              className={
+                !isOpen
+                  ? 'hidden'
+                  : 'open-menu-bg flex flex-col bg-white/90 backdrop-blur-lg z-[10000] rounded-b-[4px] absolute gap-[12px] top-[89px] right-0 py-[20px] px-[40px] h-[248px] w-full'
+              }>
+              {data.map(Link => (
+                <li key={Link.name} className='text-base list-none'>
+                  <a
+                    href={Link.Link}
+                    className='text-N-800 font-600 text-h6 font-heading uppercase hover:text-N-700'>
+                    {Link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
@@ -66,11 +61,7 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
         <div className='flex gap-[200px] justify-between items-center container'>
           <Link href='/'>
             <div className='flex justify-center'>
-              <img
-                src='/logo-black.svg'
-                className='object-center w-[100px] h-full'
-                alt='Logo'
-              />
+              <img src='/logo-black.svg' className='object-center w-[100px] h-full' alt='Logo' />
             </div>
           </Link>
           <div className='flex py-[12px] gap-[32px]'>
