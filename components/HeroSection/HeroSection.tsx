@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import CN from 'classnames'
 import { Button } from 'components/Button'
+import { SocialButton } from 'components/atoms/SocialButton'
+import Link from 'next/link'
 
 export interface HeroSectionProps {
   [x: string]: any
@@ -30,7 +32,43 @@ export const HeroSection: FC<HeroSectionProps> = ({
           businesses enhance their online presence and achieve their digital goals.
         </p>
         <div className='flex md:pt-[24px] justify-center md:justify-start'>
-          <Button label='See projects' appearance='primary' />
+          <Link href='/projects'>
+            <Button label='See projects' appearance='primary' />
+          </Link>
+        </div>
+
+        {/* Social links */}
+        <div className='flex gap-[16px] pt-[16px] lg:pt-[32px] items-center justify-center lg:justify-start'>
+          {/* Instagram */}
+          <SocialButton
+            link='https://www.instagram.com'
+            icon={
+              <i
+                className='ri-instagram-line text-black text-[24px] cursor-pointer'
+                aria-hidden='true'
+              />
+            }
+          />
+          {/* Github */}
+          <SocialButton
+            link='https://www.github.com'
+            icon={
+              <i
+                className='ri-github-line text-black text-[24px] cursor-pointer'
+                aria-hidden='true'
+              />
+            }
+          />
+          {/* Twitter */}
+          <SocialButton
+            link='https://www.twitter.com'
+            icon={
+              <i
+                className='ri-twitter-line text-black text-[24px] cursor-pointer'
+                aria-hidden='true'
+              />
+            }
+          />
         </div>
       </div>
 
