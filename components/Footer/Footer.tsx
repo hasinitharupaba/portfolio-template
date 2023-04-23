@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import CN from 'classnames'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export interface FooterProps {
   [x: string]: any
@@ -15,6 +14,7 @@ export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps
       {/* Copyright */}
       <div className='pb-[24px]'>
         <div className='container flex flex-col md:flex-row md:justify-between items-center pt-[24px]'>
+          {/* Logo */}
           <Image
             className='object-center'
             src='/logo-black.svg'
@@ -30,7 +30,5 @@ export const Footer: FC<FooterProps> = ({ className, ...restProps }: FooterProps
     </div>
   )
 }
-
-Footer.defaultProps = {}
 
 export default Footer

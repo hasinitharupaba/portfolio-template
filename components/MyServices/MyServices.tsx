@@ -12,8 +12,13 @@ export const MyServices: FC<MyServicesProps> = ({ className, ...restProps }: MyS
   return (
     <div className={MyServicesClasses} {...restProps}>
       <div className='container flex flex-col gap-[24px] lg:gap-[40px]'>
-        <h2 className='text-h2 md:text-display-md font-700 font-heading text-center'>My services</h2>
+        <h2 className='text-h2 md:text-display-md font-700 font-heading text-center'>
+          My services
+        </h2>
+
+        {/* Service cards */}
         <div className='flex flex-col md:flex-row gap-[16px] md:gap-[32px]'>
+          {/* Change icon, heading, and the description for your preference of information*/}
           <SingleServiceItem
             icon='/icons/icon-01.svg'
             heading='Web development'
@@ -34,7 +39,5 @@ export const MyServices: FC<MyServicesProps> = ({ className, ...restProps }: MyS
     </div>
   )
 }
-
-MyServices.defaultProps = {}
 
 export default MyServices

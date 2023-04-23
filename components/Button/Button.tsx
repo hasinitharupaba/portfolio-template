@@ -3,22 +3,22 @@ import CN from 'classnames'
 
 export interface ButtonProps {
   [x: string]: any
-  rightIcon?: any
-  leftIcon?: any
-  width?: number | string
+  appearance?: 'link' | 'primary' | 'active'
   height?: number | string
   label?: string
-  appearance?: 'link' | 'primary' | 'active'
+  leftIcon?: any
+  rightIcon?: any
+  width?: number | string
 }
 
 export const Button: FC<ButtonProps> = ({
-  className,
   appearance,
-  rightIcon,
-  leftIcon,
-  width,
+  className,
   height,
   label,
+  leftIcon,
+  rightIcon,
+  width,
   ...restProps
 }: ButtonProps) => {
   const ButtonClasses = CN(

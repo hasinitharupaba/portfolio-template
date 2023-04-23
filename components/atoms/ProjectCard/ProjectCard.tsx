@@ -2,19 +2,22 @@ import React, { FC } from 'react'
 import CN from 'classnames'
 import Image from 'next/image'
 import { Button } from 'components/Button'
+import Link from 'next/link'
 
 export interface ProjectCardProps {
   [x: string]: any
-  heading?: string
   description?: string
+  heading?: string
   image?: string
+  link?: string
 }
 
 export const ProjectCard: FC<ProjectCardProps> = ({
   className,
-  heading,
   description,
+  heading,
   image,
+  link,
   ...restProps
 }: ProjectCardProps) => {
   const ProjectCardClasses = CN(
@@ -29,11 +32,13 @@ export const ProjectCard: FC<ProjectCardProps> = ({
         <h3 className='text-h3 font-600'>{heading}</h3>
         <p className='text-base font-400 text-N-600'>{description}</p>
         <div className='flex md:pt-[16px]'>
-          <Button
-            label='Live demo'
-            appearance='primary'
-            rightIcon={<i className='ri-arrow-right-up-line text-[20px]' />}
-          />
+          <Link href={link || ''}>
+            <Button
+              label='Live demo'
+              appearance='primary'
+              rightIcon={<i className='ri-arrow-right-up-line text-[20px]' />}
+            />
+          </Link>
         </div>
       </div>
       <Image
@@ -46,7 +51,5 @@ export const ProjectCard: FC<ProjectCardProps> = ({
     </div>
   )
 }
-
-ProjectCard.defaultProps = {}
 
 export default ProjectCard

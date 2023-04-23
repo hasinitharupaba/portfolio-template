@@ -20,6 +20,7 @@ export const HeroSection: FC<HeroSectionProps> = ({
   return (
     <div className={HeroSectionClasses} {...restProps}>
       <div className='flex flex-col gap-[12px]'>
+        {/* Hero description */}
         <h1 className='text-h1 md:text-display-xl font-700 font-heading md:max-w-[540px] text-center md:text-left !leading-none'>
           Hey! I am {''} <br className='lg:hidden' />
           <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-[#E63F3F]'>
@@ -72,6 +73,7 @@ export const HeroSection: FC<HeroSectionProps> = ({
         </div>
       </div>
 
+      {/* Hero banner image */}
       <div className='w-full md:w-[400px] h-[400px] md:h-full'>
         <img
           src='https://images.unsplash.com/photo-1539343915366-4da26f7a1f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
@@ -82,7 +84,5 @@ export const HeroSection: FC<HeroSectionProps> = ({
     </div>
   )
 }
-
-HeroSection.defaultProps = {}
 
 export default HeroSection

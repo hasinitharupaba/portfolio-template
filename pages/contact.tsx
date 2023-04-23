@@ -29,8 +29,12 @@ export default function Contact() {
             out and get in touch with me today! Whether you have a specific project in mind or just
             want to discuss your web development needs, I am here to help.
           </p>
+
+          {/* Contact details */}
           <div className='flex flex-col gap-[24px] md:gap-[32px] md:flex-row md:justify-between pt-[24px] md:pt-[60px]'>
-            {/* Contact details */}
+            {/* Change icon, heading, and the description, and the relevant link for your preference of information.
+             * For the whatsapp link, add your phone number to open whatsapp when clicked
+             */}
             <ContactCard
               icon={<i className='ri-whatsapp-line' />}
               heading='Whatsapp me'

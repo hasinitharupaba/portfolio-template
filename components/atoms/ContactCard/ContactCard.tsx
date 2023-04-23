@@ -42,6 +42,4 @@ export const ContactCard: FC<ContactCardProps> = ({
   )
 }
 
-ContactCard.defaultProps = {}
-
 export default ContactCard

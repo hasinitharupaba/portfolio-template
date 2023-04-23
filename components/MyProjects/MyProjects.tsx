@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import CN from 'classnames'
-import Image from 'next/image'
 import { ProjectCard } from 'components/atoms/ProjectCard'
 
 export interface MyProjectsProps {
@@ -18,7 +17,10 @@ export const MyProjects: FC<MyProjectsProps> = ({ className, ...restProps }: MyP
       <h2 className='text-h2 md:text-display-md font-700 font-heading text-center'>
         Featured projects
       </h2>
+
+      {/* Project card components */}
       <div className='flex flex-col gap-[24px]'>
+        {/* Change image, heading, and the description for your preference of information*/}
         <ProjectCard
           heading='Fashionista'
           description='A responsive and scalable e-commerce web app for a fashion brand, developed using React
@@ -36,7 +38,5 @@ export const MyProjects: FC<MyProjectsProps> = ({ className, ...restProps }: MyP
     </div>
   )
 }
-
-MyProjects.defaultProps = {}
 
 export default MyProjects

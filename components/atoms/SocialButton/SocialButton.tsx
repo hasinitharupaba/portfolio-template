@@ -8,16 +8,16 @@ import Link from 'next/link'
 
 export interface SocialButtonProps {
   [x: string]: any
-  link?: string
-  icon?: any
   heading?: string
+  icon?: any
+  link?: string
 }
 
 export const SocialButton: FC<SocialButtonProps> = ({
   className,
-  link,
-  icon,
   heading,
+  icon,
+  link,
   ...restProps
 }: SocialButtonProps) => {
   const SocialButtonClasses = CN(`social-button`, className)
@@ -37,7 +37,5 @@ export const SocialButton: FC<SocialButtonProps> = ({
     </div>
   )
 }
-
-SocialButton.defaultProps = {}
 
 export default SocialButton

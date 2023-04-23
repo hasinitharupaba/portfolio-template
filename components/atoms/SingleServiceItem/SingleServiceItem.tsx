@@ -4,16 +4,16 @@ import Image from 'next/image'
 import useViewPort from 'utils/useViewport'
 export interface SingleServiceItemProps {
   [x: string]: any
-  icon?: any
-  heading?: string
   description?: string
+  heading?: string
+  icon?: any
 }
 
 export const SingleServiceItem: FC<SingleServiceItemProps> = ({
   className,
-  icon,
-  heading,
   description,
+  heading,
+  icon,
   ...restProps
 }: SingleServiceItemProps) => {
   const SingleServiceItemClasses = CN(
@@ -39,7 +39,5 @@ export const SingleServiceItem: FC<SingleServiceItemProps> = ({
     </div>
   )
 }
-
-SingleServiceItem.defaultProps = {}
 
 export default SingleServiceItem

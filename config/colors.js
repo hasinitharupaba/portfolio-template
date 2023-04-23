@@ -1,4 +1,5 @@
 const palette = {
+  // Add your brand colors to the B pallette to change colors globally
   B: {
     paletteName: 'Brand',
     base: '#2465ff',

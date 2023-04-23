@@ -15,6 +15,7 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
 
   const { isMobile, isDesktop, isTablet } = useViewport()
 
+  /* Mobile menu links */
   const data = [
     { name: 'Home', Link: '/' },
     { name: 'Projects', Link: '/projects' },
@@ -91,7 +92,5 @@ export const Header: FC<HeaderProps> = ({ className, ...restProps }: HeaderProps
     </div>
   )
 }
-
-Header.defaultProps = {}
 
 export default Header
